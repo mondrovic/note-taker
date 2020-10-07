@@ -14,7 +14,7 @@ app.use(express.json());
 // get for db.json
 app.get("/api/notes", (req, res) => {
   let results = db;
-
+  console.log(results);
   res.json(results);
 });
 

@@ -22,3 +22,8 @@ app.get("/api/notes", (req, res) => {
 // app.get("/notes", (req, res) => {
 //   console.log(req, res);
 // });
+
+// adds port to listen on
+app.listen(PORT, () => {
+  console.log(`API server now on port ${PORT}!`);
+});

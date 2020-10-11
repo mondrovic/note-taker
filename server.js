@@ -19,12 +19,3 @@ app.use(express.static("public"));
 app.listen(PORT, () => {
   console.log(`API server now on port ${PORT}!`);
 });
-
-router.get("/notes", (req, res) => {
-  res.sendFile(path.join(__dirname, "./public/notes.html"));
-});
-
-//html pages
-app.get("/", (req, res) => {
-  res.sendFile(path.join(__dirname, "./public/index.html"));
-});

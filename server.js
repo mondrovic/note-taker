@@ -20,7 +20,7 @@ function findById(id, noteArray) {
 // get for db.json
 app.get("/api/notes", (req, res) => {
   let results = db;
-  res.json(results);
+  res.send("This is");
 });
 
 //get for specific id
@@ -33,7 +33,14 @@ app.get("/api/notes/:id", (req, res) => {
   }
 });
 
-// add spot for index.html and notes.html
+//html pages
+app.get("/", (req, res) => {
+  res.sendFile(path.join(__dirname, "./public/index.html"));
+});
+
+app.get("/notes", (req, res) => {
+  res.sendFile(path.join(__dirname, "./public/notes.html"));
+});
 
 // posts changes to db and checks if response is valid
 app.post("/api/notes", (req, res) => {

@@ -2,7 +2,7 @@ const router = require("express").Router();
 
 const { validateNote, findById, createNote } = require("../../lib/notes");
 
-const { notes } = require("../../data/db.json");
+const { notes } = require("../../db/db.json");
 
 // get for db.json
 router.get("/notes", (req, res) => {
@@ -24,7 +24,7 @@ router.get("/notes/:id", (req, res) => {
 });
 
 // posts changes to db and checks if response is valid
-app.post("/notes", (req, res) => {
+router.post("/notes", (req, res) => {
   // parses request id to string
   req.body.id = notes.length.toString();
 

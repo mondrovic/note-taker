@@ -13,6 +13,8 @@ note-taker is a web application that stores notes to a server-side database. Not
   * [Questions](#questions)
   
 
+![image](./note-taker.jpg)
+
 ## Installation
 
 Clone the repository then run `npm install package.json` to make sure all dependencies are gotten. Server will need to be deployed for interaction.

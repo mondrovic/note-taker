@@ -9,7 +9,6 @@ note-taker is a web application that stores notes to a server-side database. Not
   * [Installation](#installation)
   * [Usage](#usage)
   * [Credits](#Credits)
-  * [License](#License)
   * [Questions](#questions)
   
 
